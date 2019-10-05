@@ -1,0 +1,119 @@
+body, #start, #end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body {
+  background: #2b87d1;
+  height: 100vh;
+  margin: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body #end {
+  display: none;
+}
+
+body #end span {
+  font-size: 80px;
+}
+
+body #start, body #end {
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  color: white;
+  font-size: 24px;
+}
+
+body #start span, body #end span {
+  margin-bottom: 15px;
+}
+
+body #start button, body #end button {
+  margin-top: 15px;
+  color: #1e1e1e;
+  background: #ffe432;
+  border: none;
+  line-height: 1.3;
+  padding: 12px 30px;
+  border-radius: 200px;
+  font-weight: 600;
+  line-height: 1.3;
+  font-size: 18px;
+}
+
+body #start button:hover, body #end button:hover {
+  opacity: 0.9;
+}
+
+body #game {
+  display: none;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  height: 400px;
+  width: 400px;
+  background: #2b87d1;
+}
+
+body #game .square {
+  border-radius: 8px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+body #game .white {
+  background: white !important;
+}
+
+body #game .unclicked {
+  background: rgba(50, 114, 210, 0.5);
+}
+
+body #game .clickedRight {
+  background: white;
+}
+
+body #game .clickedWrong {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+body #info {
+  display: none;
+  font-size: 180%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-weight: 400;
+}
+
+body #info #level, body #info #lives {
+  margin-bottom: 30px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+body #info span {
+  color: white;
+}
+/*# sourceMappingURL=styles.css.map */
