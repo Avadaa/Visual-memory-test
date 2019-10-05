@@ -137,7 +137,7 @@ function squareClick() {
                 lives--;
                 flashOngoing = true;
 
-                if (lives > 2)
+                if (lives > 0)
                     reloadOnEnd();
 
                 else
